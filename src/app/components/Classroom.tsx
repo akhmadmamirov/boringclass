@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Classroom() {
   return (
-    <div className="content-center col-span-2">
+    <div className="content-center col-span-2 ali">
       <div className="">
         <Image 
           src="/jenkins.png"
