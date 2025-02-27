@@ -1,7 +1,7 @@
 
 export const actions = [
   { 
-    "name": "Go to bathroom", 
+    "name": "Bathroom", 
     "icon": "/toilet.png",
     "price" : 10
   },
@@ -16,7 +16,7 @@ export const actions = [
     "price" : 100 
   },
   {
-    "name": "Check your phone", 
+    "name": "Check IG", 
     "icon": "/iphone.png",
     "price" : 500 
   },
@@ -36,8 +36,8 @@ export const actions = [
     "price" : 10000 
   },
   {
-    "name": "Do hw for other class", 
+    "name": "Do HW", 
     "icon": "/study.png",
     "price" : 20000 
-  }
+  },
 ]
