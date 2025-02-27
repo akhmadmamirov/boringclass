@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useContext} from "react"
 import Image from "next/image"
 
 interface ActionItem {
@@ -12,8 +12,13 @@ interface AssetProps {
 }
 
 const Asset: React.FC<AssetProps> = ({action}) => {
+
+  const iconClick = () => {
+    // setIcons(newIcons)
+  }
+
   return (
-    <div className="m-3 ml-5 place-items-center border border-white-600 rounded-xl">
+    <div className="m-3 ml-5 place-items-center border border-white-600 rounded-xl cursor-pointer" onClick={iconClick}>
       <div className="p-2">
         {action.name}
       </div>
@@ -22,7 +27,7 @@ const Asset: React.FC<AssetProps> = ({action}) => {
           width={75} height={75}
         />
       </div>
-      <div className="text-lg">
+      <div className="text-lg text-green-600">
          $ {action.price}
       </div>
     </div>
