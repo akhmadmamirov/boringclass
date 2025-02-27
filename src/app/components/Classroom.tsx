@@ -1,7 +1,11 @@
 import Image from "next/image"
-import React, { useState } from "react"
+import React from "react"
+import { IconsContext } from "../context/iconsContext"
+import { useContext } from "react"
 
-const ClassRoom= () => {
+const ClassRoom = () => {
+  let {icons} = useContext(IconsContext)
+
   return (
     <div className="col-span-2 content-center pl-10 ml-10">
       <div className="jenkins-container">
@@ -14,12 +18,14 @@ const ClassRoom= () => {
             />
         </div>
         <div className="rotating-object">
-          <Image 
-            src="/iphone.png"
-            width={75}
-            height={75}
-            alt="iphone"
-          />
+          {icons.map(() => (
+            <Image 
+             src="/iphone.png"
+             width={75}
+             height={75}
+             alt="iphone"
+           />
+          ))}
         </div>
       </div>
     </div>
