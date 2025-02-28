@@ -1,7 +1,8 @@
+import React from "react";
 import { actions } from "../../../data/actions"
 import Asset from "./Asset"
 
-export default function LeftNav() {
+const LeftNav : React.FC = () => {
   return (
     <div className="border border-white-600 p-3 gap-x-6 gap-y-10 overflow-scroll">
       <div className="grid grid-cols-2">
@@ -15,4 +16,6 @@ export default function LeftNav() {
     </div>
   )
 }
+
+export default LeftNav;
 
